@@ -1,24 +1,28 @@
-# README
+# アプリケーション名
+task-md
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+ToDoタスク管理アプリの実装。Bootstrapを導入したデザイン。
 
-Things you may want to cover:
+# 開発環境
 
-* Ruby version
+### フロントエンド
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
 
-* System dependencies
+### バックエンド
+- Ruby
+- Rails
 
-* Configuration
+### データベース
+- postglsql(ローカル環境)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 実装予定の機能
+- ページの作成
+- user管理機能
+- 投稿機能
+- 詳細機能
+- 編集機能
+- 詳細機能
