@@ -1,0 +1,50 @@
+body{
+  overflow: visible;
+}
+
+.notice,
+.alert{
+  display: none;
+}
+
+// --- header ---//
+.header{
+  background: #FBDBA2;
+  padding: 10px;
+  .nav{
+    .header_menu{
+      display: flex;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        list-style: none;
+        color: black;
+        a{
+          color: black;
+        }
+      }
+      &_title{
+        font-size: 25px;
+        font-weight: bold;
+      }
+      &_inner{
+        display: flex;
+        padding: 0;
+        align-items: center;
+        .listNew{
+          &:after{
+            font-family: "Font Awesome 5 Free";
+            content: "/f044";
+            display: inline-block;
+            margin-left: 10px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
