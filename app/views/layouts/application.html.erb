@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <%= render 'shared/header' if current_user %>
+    <%= render 'shared/header' %>
     <% if flash[:notice] %>
       <div class="alert alert-info">
         <%= flash[:notice] %>
