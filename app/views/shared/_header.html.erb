@@ -1,7 +1,11 @@
 <header class="header">
   <nav class="nav">
     <ul class="header_menu">
-      <li class="nav-link">user</li>
+      <% if user_signed_in? %>
+        <li class="nav-link"><%= current_user.name %>さん</li>
+      <% else %>
+        <li class="nav-link">GEST</li>
+      <% end %>
       <li class="header_menu_title"><%= link_to 'task-mg', root_path, class: 'nav-link'%></li>
       <li>
         <ul class="header_menu_inner">
