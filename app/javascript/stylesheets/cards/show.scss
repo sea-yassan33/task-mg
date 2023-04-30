@@ -29,6 +29,19 @@
             opacity: .7;
           }
         }
+        &,delete_btn{
+          max-width: 200px;
+          margin:20px auto 0 auto;
+          background: #e6f119ab;
+          padding: 7px;
+          border-radius: 10px;
+          color: #ffffff;
+          transition: opacity .5s;
+          text-decoration: none;
+          &:hover{
+            opacity: .7;
+          }
+        }
       }
     }
   }
