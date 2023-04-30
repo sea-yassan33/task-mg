@@ -5,5 +5,13 @@
     &_title, &_memo{
       margin-bottom: 30px;
     }
+    .form-control{
+      max-width: 500px;
+      margin: 0 auto 1rem;
+      background: #f6f8fa;
+    }
+    .select{
+      width: 500px;
+    }
   }
 }

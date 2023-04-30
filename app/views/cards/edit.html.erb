@@ -4,13 +4,18 @@
       <% if @card.errors.any? %>
         <p class="text-danger">タイトルは1-255文字以内</p>
       <% end %>
-      <div class="cardnewForm_title">
+      <div class="cardeditForm_title">
         <%= f.label :title %>
         <%= f.text_field :title, class: 'form-control', placeholder: 'カード名' %>
       </div>
-      <div class="cardnewForm_memo">
+      <div class="cardeditForm_memo">
         <%= f.label :memo %>
         <%= f.text_field :memo, class: 'form-control', placeholder: '詳細' %>
+      </div>
+
+      <div class="cardeditForm_memo">
+        <label>リスト名</label>
+        <%= select :card, :list_id, @lists.map{ |l| [l.title, l.id] }, html: { class: 'form-select' } %>
       </div>
       <div class="text-center"><%= f.submit '更新', class: 'submitBtn' %></div>
     <% end %>
